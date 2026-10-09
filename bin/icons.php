@@ -1,0 +1,4 @@
+<?php
+// Code-generated application icons, matching the existing wordmark.
+foreach([192,512] as $size){$img=imagecreatetruecolor($size,$size);$green=imagecolorallocate($img,36,88,70);$white=imagecolorallocate($img,255,255,255);$lime=imagecolorallocate($img,187,216,148);imagefill($img,0,0,$green);$s=$size/64;imagefilledrectangle($img,(int)(16*$s),(int)(24*$s),(int)(22*$s),(int)(45*$s),$white);imagefilledrectangle($img,(int)(29*$s),(int)(24*$s),(int)(35*$s),(int)(45*$s),$white);imagefilledrectangle($img,(int)(42*$s),(int)(24*$s),(int)(48*$s),(int)(45*$s),$white);imagefilledarc($img,(int)(25*$s),(int)(27*$s),(int)(18*$s),(int)(20*$s),180,360,$white,IMG_ARC_PIE);imagefilledarc($img,(int)(38*$s),(int)(27*$s),(int)(18*$s),(int)(20*$s),180,360,$white,IMG_ARC_PIE);imagefilledellipse($img,(int)(53*$s),(int)(43*$s),(int)(6*$s),(int)(6*$s),$lime);imagepng($img,dirname(__DIR__).'/public/assets/icon-'.$size.'.png');}
+echo "Application icons generated.\n";

@@ -1,0 +1,1 @@
+<div class="empty-state"><span><?= e($code) ?></span><h1><?= e($title) ?></h1><p><?= e($message) ?></p><a class="btn btn-primary" href="/catalog">Back to marketplace</a><a class="btn btn-outline-secondary" href="/dashboard">Your dashboard</a></div>
